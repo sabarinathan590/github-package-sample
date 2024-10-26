@@ -1,7 +1,11 @@
 package org.example;
 
+import com.google.gson.JsonObject;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("data","Hello World !");
+        System.out.println(jsonObject);
     }
 }
